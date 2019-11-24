@@ -1,0 +1,7 @@
+@import url(_selected/heading__link_selected.css);
+@import url(_logged/heading__link_logged.css);
+
+.heading__link {
+  color: #b6bcbf;
+  text-decoration: none;
+}

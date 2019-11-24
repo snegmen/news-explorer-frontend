@@ -1,0 +1,4 @@
+.heading__item.heading__item_selected{
+  border-bottom: #fff 2px solid;
+  height: 48px;
+}

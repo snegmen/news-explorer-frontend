@@ -1,0 +1,13 @@
+@import url(__logo/heading__logo.css);
+@import url(__list/heading__list.css);
+@import url(__item/heading__item.css);
+@import url(__link/heading__link.css);
+@import url(__logout/heading__logout.css);
+
+.heading {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: inset 0px -1px 0px rgba(255, 255, 255, .2);
+  background: rgba(196, 196, 196, .01);
+}

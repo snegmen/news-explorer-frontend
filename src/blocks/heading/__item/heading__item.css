@@ -1,0 +1,14 @@
+@import url(_selected/heading__item_selected.css);
+
+.heading__item {
+  margin-right: 32px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.heading__item:last-of-type {
+  margin-right: 0;
+}

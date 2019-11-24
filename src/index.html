@@ -5,13 +5,36 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Diploma Yandex Praktikum">
+  <meta name="author" content="Svyatoslav Savilov">
   <title>News Explorer</title>
   <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
   <link rel="icon" href="<%= require('./images/favicon2.png')%>" type="image/png">
 </head>
 
 <body>
-    <h1>Diploma Yandex Praktikum</h1>
+  <header class="header">
+    <nav class="heading">
+      <a href="#" class="heading__logo">News Explorer</a>
+      <ul class="heading__list">
+        <li class="heading__item heading__item_selected"><a href="#" class="heading__link heading__link_selected">Главная</a></li>
+        <li class="heading__item"><a href="#" class="heading__link">О проекте</a></li>
+        <li class="heading__item"><a href="#" class="heading__link">Сохранённые статьи</a></li>
+        <li class="heading__item"><a href="#" class="heading__link heading__link_logged">Lenin<div class="heading__logout"></div></a></li>
+      </ul>
+    </nav>
+    <div class=search-wrapper>
+      <h1 class="search__title">Что в мире творится?</h1>
+      <h3 class="search__subtitle">Находите самые свежие статьи на любую тему
+        и сохраняйте в своём личном кабинете.
+      </h3>
+      <form novalidate class="search__form" name="news-finder" method="POST">
+        <input class="search__form-input" type="text" name="search" placeholder="Введите тему новости" required />
+        <button class="button header__button" type="submit">Искать</button>
+      </form>
+    </div>
+  </header>
+  <i class="circle-preloader"></i>
   <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
 </body>
 
