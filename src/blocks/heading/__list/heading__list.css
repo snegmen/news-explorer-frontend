@@ -4,3 +4,16 @@
   margin-right: 104px;
   margin-top: 30px;
 }
+
+@media screen and (max-width: 1023px) {
+  .heading__list {
+    margin-top: 22px;
+    margin-right: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .heading__list {
+
+  }
+}

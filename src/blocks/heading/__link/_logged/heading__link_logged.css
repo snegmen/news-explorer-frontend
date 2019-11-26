@@ -4,3 +4,15 @@
   color: #fff;
   padding: 12px 19px 12px;
 }
+
+@media screen and (max-width: 1023px) {
+  .heading__link.heading__link_logged {
+    padding: 8px 15px 8px;
+  }
+}
+
+@media screen and (max-width: 767) {
+  .heading__link.heading__link_logged {
+
+  }
+}

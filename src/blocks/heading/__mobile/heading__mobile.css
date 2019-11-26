@@ -1,0 +1,21 @@
+@import url(_close/heading__mobile_close.css);
+
+.heading__mobile {
+  width: 24px;
+  height: 24px;
+  align-self: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../../../images/menu_white.svg);
+  cursor: pointer;
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .heading__mobile {
+    display: block;
+    position: absolute;
+    right: 40px;
+  }
+}

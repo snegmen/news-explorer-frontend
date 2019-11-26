@@ -1,0 +1,17 @@
+.search__form-input {
+  margin-left: 30px;
+  background-color: #fff;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #000;
+  box-sizing: border-box;
+  border: 0px;
+  width: 100%;
+}
+
+.search__form-input::placeholder {
+  color: #b6bcbf;
+}

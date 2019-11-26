@@ -16,6 +16,7 @@
   <header class="header">
     <nav class="heading">
       <a href="#" class="heading__logo">News Explorer</a>
+      <div class="heading__mobile" id="mobile-menu"></div>
       <ul class="heading__list">
         <li class="heading__item heading__item_selected"><a href="#" class="heading__link heading__link_selected">Главная</a></li>
         <li class="heading__item"><a href="#" class="heading__link">О проекте</a></li>
@@ -23,14 +24,14 @@
         <li class="heading__item"><a href="#" class="heading__link heading__link_logged">Lenin<div class="heading__logout"></div></a></li>
       </ul>
     </nav>
-    <div class=search-wrapper>
+    <div class=search>
       <h1 class="search__title">Что в мире творится?</h1>
       <h3 class="search__subtitle">Находите самые свежие статьи на любую тему
         и сохраняйте в своём личном кабинете.
       </h3>
       <form novalidate class="search__form" name="news-finder" method="POST">
         <input class="search__form-input" type="text" name="search" placeholder="Введите тему новости" required />
-        <button class="button header__button" type="submit">Искать</button>
+        <button class="button search__button" type="submit">Искать</button>
       </form>
     </div>
   </header>

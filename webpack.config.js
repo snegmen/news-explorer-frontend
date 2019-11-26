@@ -52,9 +52,9 @@ module.exports = {
               gifsicle: {
                 interlaced: false,
               },
-              webp: {
-                quality: 85,
-              },
+              // webp: {
+              //   quality: 85,
+              // },
             },
           },
         ],

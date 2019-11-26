@@ -2,3 +2,9 @@
   border-bottom: #fff 2px solid;
   height: 48px;
 }
+
+@media screen and (max-width: 1023px) {
+  .heading__item.heading__item_selected {
+    height: 42px;
+  }
+}
