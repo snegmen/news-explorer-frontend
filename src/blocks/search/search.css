@@ -7,6 +7,28 @@
 .search {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   width: 600px;
-  margin: 0 auto 0;
+  margin: auto;
+}
+
+@media screen and (max-width: 1023px) {
+  .search {
+    width: 448px;
+    min-height: 400px;
+    align-content: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .search {
+    width: 288px;
+    min-height: 536px;
+  }
+}
+
+@media screen and (max-width: 323px) {
+  .search {
+    width: 100%;
+  }
 }

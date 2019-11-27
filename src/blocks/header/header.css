@@ -6,3 +6,15 @@
   background-position: center;
   background-image: url(../../images/background.png);
 }
+
+@media screen and (max-width: 1023px) {
+  .header {
+    min-height: 400px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    min-height: 536px;
+  }
+}
