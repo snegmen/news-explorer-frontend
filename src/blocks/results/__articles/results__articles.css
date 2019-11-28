@@ -1,0 +1,22 @@
+.results__articles {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 16px;
+  grid-row-gap: 15px;
+  margin: 64px 104px;
+}
+
+@media screen and (max-width: 1023px) {
+  .results__articles {
+    column-gap: 8px;
+    row-gap: 8px;
+    margin: 32px 40px 40px 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .results__articles {
+    grid-template-columns: 1fr;
+    margin: 24px 16px 0 16px;
+  }
+}

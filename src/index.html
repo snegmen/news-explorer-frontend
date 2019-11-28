@@ -15,10 +15,10 @@
 <body>
   <header class="header">
     <nav class="heading">
-      <a href="#" class="heading__logo">News Explorer</a>
+      <a href="./" class="heading__logo">News Explorer</a>
       <div class="heading__mobile" id="mobile-menu"></div>
       <ul class="heading__list">
-        <li class="heading__item heading__item_selected"><a href="#" class="heading__link heading__link_selected">Главная</a></li>
+        <li class="heading__item heading__item_selected"><a href="./" class="heading__link heading__link_selected">Главная</a></li>
         <li class="heading__item"><a href="#" class="heading__link">О проекте</a></li>
         <li class="heading__item"><a href="#" class="heading__link">Сохранённые статьи</a></li>
         <li class="heading__item"><a href="#" class="heading__link heading__link_logged">Lenin<div class="heading__logout"></div></a></li>
@@ -48,6 +48,60 @@
         <h5 class="preloader__subtitle">К сожалению по вашему запросу ничего не найдено.</h5>
       </div>
     </section>
+    <main class="results">
+        <h3 class="results__title">Результаты поиска</h3>
+        <div class="results__articles">
+          <a href="#" class="card">
+            <div class="card__upper-body">
+              <div class="card__picture"></div>
+              <div class="card__icon card__icon_saved"></div>
+              <p class="card__balloon">Войдите, чтобы сохранять статьи</p>
+              <div class="card__wrapper">
+                <p class="card__date">26 ноября 2019</p>
+                <h4 class="card__title">Первые танки. Британские «Ромбы»</h4>
+                <p class="card__text">В конце раздела нашей Бронеколлекции, который был посвящен бронепоездам,
+                   мы отмечали, что их золотой век окончился довольно быстро.
+                </p>
+              </div>
+            </div>
+            <p class="card__source">Наука и техника</p>
+          </a>
+          <a href="#" class="card">
+            <div class="card__upper-body">
+              <div class="card__picture"></div>
+              <div class="card__icon"></div>
+              <p class="card__balloon">Войдите, чтобы сохранять статьи</p>
+              <div class="card__wrapper">
+                <p class="card__date">26 ноября 2019</p>
+                <h4 class="card__title">Долго запрягали – быстро полетят?
+                  В ОАК озвучили планы по производству лайнера МС-21</h4>
+                <p class="card__text">Представитель ПАО «Объединённая авиастроительная корпорация»
+                  рассказал о подготовке серийного производства лайнеров МС-21. По словам советника
+                  гендиректора ОАК, первая партия в шесть машин будет готова к 2021 году
+                </p>
+              </div>
+            </div>
+            <p class="card__source">Наука и техника</p>
+          </a>
+          <a href="#" class="card">
+            <div class="card__upper-body">
+              <div class="card__picture"></div>
+              <div class="card__icon"></div>
+              <p class="card__balloon">Войдите, чтобы сохранять статьи</p>
+              <div class="card__wrapper">
+                <p class="card__date">26 ноября 2019</p>
+                <h4 class="card__title">Львы видят эти иллюзии так же, как и вы. И разрывают их в клочья</h4>
+                <p class="card__text">Миллионы пользователей сходятся во мнении, что, хотя социальные сети
+                  имеют множество недостатков, у них все-таки есть приятные аспекты. Это вирусные иллюзии и
+                  милые видео с котиками. «А если их совместить?», – подумали ученые.
+                </p>
+              </div>
+            </div>
+            <p class="card__source">Наука и техника</p>
+          </a>
+        </div>
+        <button class="button results__button">Показать еще</button>
+      </main>
   <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
 </body>
 

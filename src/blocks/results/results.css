@@ -1,0 +1,8 @@
+@import url(../common/card/card.css);
+@import url(../results/__title/results__title.css);
+@import url(../results/__button/results__button.css);
+@import url(../results/__articles/results__articles.css);
+
+.result {
+  background: #f5f6f7;
+}
