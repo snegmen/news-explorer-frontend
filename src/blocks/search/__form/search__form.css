@@ -10,7 +10,6 @@
 @media screen and (max-width: 1023px) {
   .search__form {
     margin-top: 48px;
-    /* width: 448px; */
   }
 }
 
@@ -21,6 +20,5 @@
     display: block;
     background-color: rgba(255, 255, 255, 0);
     border-radius: 0;
-    border: red solid 1px;
   }
 }

@@ -35,7 +35,19 @@
       </form>
     </div>
   </header>
-  <i class="circle-preloader"></i>
+  <section class=preloader>
+      <!-- Добавьте(уберите) класс preloader__wrapper_hide -->
+      <div class="preloader__wrapper preloader__wrapper_hide" id="preloader-searching">
+        <i class="circle-preloader"></i>
+        <h5 class="preloader__subtitle">Идет поиск новостей...</h5>
+      </div>
+      <!-- Добавьте(уберите) класс preloader__wrapper_hide -->
+      <div class="preloader__wrapper " id="preloader-not-found">
+        <img class="preloader__icon" src="<%= require('./images/not-found.svg')%>" alt="Ничего не найдено.">
+        <h4 class="preloader__title">Ничего не найдено</h4>
+        <h5 class="preloader__subtitle">К сожалению по вашему запросу ничего не найдено.</h5>
+      </div>
+    </section>
   <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
 </body>
 

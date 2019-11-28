@@ -27,7 +27,7 @@
   }
 }
 
-@media screen and (max-width: 323px) {
+@media screen and (max-width: 300px) {
   .search {
     width: 100%;
   }
