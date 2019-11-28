@@ -3,6 +3,22 @@
 @import url(../results/__button/results__button.css);
 @import url(../results/__articles/results__articles.css);
 
-.result {
+.results {
   background: #f5f6f7;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+@media screen and (max-width: 1023px) {
+  .results {
+    padding-top: 32px;
+    padding-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .results {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }

@@ -1,7 +1,7 @@
 .button.results__button {
   background-color: #fff;
   color: #000;
-  margin: 0 auto 80px;
+  margin: 0 auto 0;
   border-radius: 80px;
   font-family: 'Roboto';
   font-style: normal;
@@ -19,7 +19,7 @@
 
 @media screen and (max-width: 1023px) {
   .button.results__button {
-    margin: 32px auto 40px auto;
+    margin: 32px auto 0;
     padding: 15px 40px 15px 40px;
   }
 }
@@ -27,7 +27,7 @@
 @media screen and (max-width: 767px) {
   .button.results__button {
     margin-top: 15px;
-    margin-bottom: 32px;
+    margin-bottom: 0;
     width: calc(100% - 32px);
   }
 }
