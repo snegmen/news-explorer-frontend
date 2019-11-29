@@ -1,0 +1,13 @@
+@import url(../__list-item/_link/footer__list-item_link.css);
+
+.footer__list-item {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .footer__list-item {
+    padding: 0;
+    margin: 0;
+  }
+}

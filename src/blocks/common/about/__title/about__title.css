@@ -13,10 +13,3 @@
     line-height: 40px;
   }
 }
-
-@media screen and (max-width: 767px) {
-  .about__title {
-    font-size: 30px;
-    line-height: 40px;
-  }
-}
