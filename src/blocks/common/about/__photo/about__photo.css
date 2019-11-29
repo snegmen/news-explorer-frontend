@@ -1,0 +1,22 @@
+.about__photo {
+  width: 464px;
+  height: 464px;
+  margin-right: 56px;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 1023px) {
+  .about__photo {
+    width: 232px;
+    height: 232px;
+    margin-right: 32px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .about__photo {
+    min-width: 272px;
+    min-height: 272px;
+    margin: 0;
+  }
+}
