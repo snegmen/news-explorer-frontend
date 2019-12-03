@@ -7,13 +7,44 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="description" content="Diploma Yandex Praktikum">
   <meta name="author" content="Svyatoslav Savilov">
-  <title>News Explorer / О проекте</title>
+  <title>News Explorer / Сохранённые статьи</title>
   <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.articles.css %>">
   <link rel="icon" href="../<%= require('../../images/favicon2.png')%>" type="image/png">
 </head>
 
 <body>
-  <h1>Articles To be continue...</h1>
+<header class="header header_white">
+    <nav class="heading heading__black">
+      <a href="../" class="heading__logo heading__logo_black">News Explorer</a>
+      <div class="heading__mobile heading__mobile_black" id="mobile-menu"></div>
+      <ul class="heading__list">
+        <li class="heading__item"><a href="../" class="heading__link heading__link_black">Главная</a></li>
+        <li class="heading__item"><a href="../about/" class="heading__link heading__link_black">О проекте</a></li>
+        <li class="heading__item heading__item_selected-black"><a href="./" class="heading__link  heading__link_selected-black">Сохранённые статьи</a></li>
+        <li class="heading__item"><a href="#" class="heading__link heading__link_logged heading__link_logged-black heading__link_selected-black">Lenin
+          <div class="heading__logout heading__logout_black"></div></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <footer class="footer">
+    <p class="footer__copyright">&#169; 2019 snegmen</p>
+    <nav>
+      <ul class="footer__list">
+        <li class="footer__list-item"><a href="../" class="footer__list-item_link">Главная</a></li>
+        <li class="footer__list-item"><a href="../about/" class="footer__list-item_link">О проекте</a></li>
+        <li class="footer__list-item"><a href="https://praktikum.yandex.ru" class="footer__list-item_link" target="_blank">Яндекс.Практикум</a></li>
+      </ul>
+    </nav>
+    <p class="footer__links">
+      <a href="https://github.com/snegmen/" class="footer__icon" target="_blank">
+        <img src="../<%= require('../../images/git.svg')%>" alt="Логотип GitHub">
+      </a>
+      <a href="https://facebook.com" class="footer__icon" target="_blank">
+        <img src="../<%= require('../../images/facebook.svg')%>" alt="Логотип Facebook">
+      </a>
+    </p>
+  </footer>
   <script src="<%= htmlWebpackPlugin.files.chunks.articles.entry %>"></script>
 </body>
 
