@@ -1,0 +1,25 @@
+.saved-description__title {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 46px;
+  color: #1a1b22;
+  width: 530px;
+  margin: 28px 0 0;
+}
+
+@media screen and (max-width: 1023px) {
+  .saved-description__title {
+    font-size: 30px;
+    line-height: 34px;
+    width: 336px;
+    margin-top: 16px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .saved-description__title {
+    width: 288px;
+  }
+}
