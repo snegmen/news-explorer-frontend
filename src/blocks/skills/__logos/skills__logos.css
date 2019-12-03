@@ -1,0 +1,21 @@
+.skills__logos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 70px;
+  margin: 0;
+}
+
+@media screen and (max-width: 1279px) {
+  .skills__logos {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .skills__logos {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+    row-gap: 40px;
+    justify-items: center;
+  }
+}

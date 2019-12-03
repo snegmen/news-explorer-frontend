@@ -8,6 +8,8 @@ const webpack = require('webpack');
 module.exports = {
   entry: {
     main: './src/index.js',
+    about: './src/pages/about/index.js',
+    articles: './src/pages/articles/index.js',
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -25,7 +27,25 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader'],
+        use: [
+          {
+            loader: MiniCssExtractPlugin.loader,
+            options: { publicPath: '../' },
+          },
+          {
+            loader: 'css-loader',
+            options: { importLoaders: 1 },
+          },
+          {
+            loader: 'postcss-loader',
+            options: {
+              config: {
+                // eslint-disable-next-line no-path-concat
+                path: `${__dirname}/postcss.config.js`,
+              },
+            },
+          },
+        ],
       },
       {
         test: /\.(eot|ttf|woff|woff2)$/,
@@ -67,6 +87,18 @@ module.exports = {
       hash: true,
       template: './src/index.html',
       filename: 'index.html',
+    }),
+    new HtmlWebpackPlugin({
+      inject: false,
+      hash: true,
+      template: './src/pages/about/index.html',
+      filename: 'about/index.html',
+    }),
+    new HtmlWebpackPlugin({
+      inject: false,
+      hash: true,
+      template: './src/pages/articles/index.html',
+      filename: 'articles/index.html',
     }),
     new WebpackMd5Hash(),
     new webpack.DefinePlugin({

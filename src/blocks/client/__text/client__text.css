@@ -1,0 +1,15 @@
+.client__text {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: #1a1b22;
+  width: 815px;
+}
+
+@media screen and (max-width: 1023px) {
+  .client__text {
+    width: 100%;
+  }
+}

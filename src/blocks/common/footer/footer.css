@@ -2,6 +2,7 @@
 @import url(../footer/__list/footer__list.css);
 @import url(../footer/__list-item/footer__list-item.css);
 @import url(../footer/__icon/footer__icon.css);
+@import url(../footer/__links/footer__links.css);
 
 .footer {
   display: flex;

@@ -1,0 +1,25 @@
+@import url(__title/skills__title.css);
+@import url(__logos/skills__logos.css);
+
+.skills {
+  display: flex;
+  justify-content: space-between;
+  height: 334px;
+  padding-left: 104px;
+  padding-right: 104px;
+}
+
+@media screen and (max-width: 1279px) {
+  .skills {
+    flex-direction: column;
+    justify-content: start;
+    padding: 40px 40px 49px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .skills {
+    height: 528px;
+    padding: 32px 16px 52px;
+  }
+}
