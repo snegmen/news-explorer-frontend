@@ -6,6 +6,7 @@
 @import url(../card/__icon/card__icon.css);
 @import url(../card/__balloon/card__balloon.css);
 @import url(../card/__wrapper/card__wrapper.css);
+@import url(../card/__keyword/card__keyword.css);
 
 .card {
   position: relative;

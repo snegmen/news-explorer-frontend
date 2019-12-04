@@ -1,4 +1,5 @@
-@import url(../__icon/_saved/card__icon_saved.css);
+@import url(_saved/card__icon_saved.css);
+@import url(_del/card__icon_del.css);
 
 .card__icon {
   position: absolute;

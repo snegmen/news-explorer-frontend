@@ -1,33 +1,31 @@
-.card__balloon {
-  position: absolute;
-  background: #fff;
+.card__keyword {
+  background-color: #fff;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: bold;
-  font-size: 12px;
-  line-height: 14px;
+  font-size: 14px;
+  line-height: 24px;
   display: flex;
   align-items: center;
   color: #000;
   padding: 0 12px 0 12px;
   border-radius: 10px;
-  max-width: 50%;
-  height: 40px;
+  position: absolute;
   top: 14px;
-  right: 69px;
-  opacity: 0;
+  left: 24px;
+  height: 40px;
 }
 
 @media screen and (max-width: 1023px) {
-  .card__balloon {
-    top: -2px;
-    right: 53px;
+  .card__keyword {
+    top: -8px;
+    left: 8px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .card__balloon {
-    top: 6px;
-    right: 61px;
+  .card__keyword {
+    top: 0;
+    left: 16px;
   }
 }
