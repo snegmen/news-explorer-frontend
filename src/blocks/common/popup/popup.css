@@ -1,0 +1,42 @@
+@import url(__wrap/popup__wrap.css);
+@import url(__close/popup__close.css);
+@import url(__title/popup__title.css);
+@import url(__subtitle/popup__subtitle.css);
+@import url(__input/popup__input.css);
+@import url(__error/popup__error.css);
+@import url(__or/popup__or.css);
+@import url(__button/popup__button.css);
+
+.popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 34px 35px 28px;
+  border-radius: 16px;
+  width: 430px;
+  box-sizing: border-box;
+  z-index: 200;
+}
+
+@media screen and (max-width: 767px) {
+  .popup {
+    transform: translate(0, 0);
+    position: absolute;
+    top: 56px;
+    left: 0;
+    padding: 16px;
+    width: 100%;
+    height: calc(100vh - 56px);
+    box-sizing: border-box;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    z-index: 200;
+  }
+
+  .popup + .overlay {
+    opacity: 0;
+    transition: .5s;
+  }
+}

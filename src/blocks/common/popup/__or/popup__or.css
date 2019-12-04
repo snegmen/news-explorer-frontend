@@ -1,0 +1,16 @@
+.popup__or {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  display: block;
+  color: #000;
+}
+
+.popup__or .popup__or-click {
+  color: #2f71e5;
+  text-decoration: none;
+  cursor: pointer;
+}

@@ -42,7 +42,7 @@
         <h5 class="preloader__subtitle">Идет поиск новостей...</h5>
       </div>
       <!-- Добавьте(уберите) класс preloader__wrapper_hide -->
-      <div class="preloader__wrapper " id="preloader-not-found">
+      <div class="preloader__wrapper" id="preloader-not-found">
         <img class="preloader__icon" src="<%= require('./images/not-found.svg')%>" alt="Ничего не найдено.">
         <h4 class="preloader__title">Ничего не найдено</h4>
         <h5 class="preloader__subtitle">К сожалению по вашему запросу ничего не найдено.</h5>
@@ -152,6 +152,49 @@
       </footer>
 
       <div id="hiding-blocks">
+        <!-- Уберите(добавьте) класс popup__wrap_hide -->
+        <section class="popup__wrap popup__wrap_hide">
+          <form class="popup" name="login">
+            <div class="popup__close" id="close-login-form"></div>
+            <h4 class="popup__title">Вход</h4>
+            <span class="popup__subtitle">E-mail</span>
+            <input class="popup__input" name="email" type="email" placeholder="Введите почту" required>
+            <span class="popup__error" id="error-email-login">Неправильный формат email</span>
+            <span class="popup__subtitle">Пароль</span>
+            <input class="popup__input" name="password" type="password" placeholder="Введите пароль" required>
+            <span class="popup__error" id="error-password-login">Введите пароль</span>
+            <button class="button popup__button" name="login-button" type="submit">Войти</button>
+            <span class="popup__or">или<span class="popup__or-click" id="open-signup-form">Зарегистрироваться</span></span>
+          </form>
+        </section>
+        <!-- Уберите(добавьте) класс popup__wrap_hide -->
+        <section class="popup__wrap popup__wrap_hide">
+          <form class="popup" name="signup">
+            <div class="popup__close" id="close-signup-form"></div>
+            <h4 class="popup__title">Регистрация</h4>
+            <span class="popup__subtitle">E-mail</span>
+            <input class="popup__input" name="email" type="email" placeholder="Введите почту" required>
+            <span class="popup__error" id="error-email">Введите email</span>
+            <span class="popup__subtitle">Пароль</span>
+            <input class="popup__input" name="password" type="password" placeholder="Введите пароль" required minlength="8">
+            <span class="popup__error" id="error-password">Длина пароля не менее 8 символов</span>
+            <span class="popup__subtitle">Имя</span>
+            <input class="popup__input" name="name" placeholder="Введите свое имя" required minlength="2">
+            <span class="popup__error popup__error_user" id="error-name">Введите имя!</span>
+            <span class="popup__error popup__error_hide" id="error-register">Такой пользователь уже есть</span>
+            <button class="button popup__button" name="signup-button" type="submit">Зарегистрироваться</button>
+            <span class="popup__or">или<span class="popup__or-click" id="open-login-form">Войти</span></span>
+          </form>
+        </section>
+        <!-- Уберите(добавьте) класс popup__wrap_hide -->
+        <section class="popup__wrap popup__wrap_hide" id="signup-ok">
+          <form class="popup">
+            <div class="popup__close" id="close-signup-ok-form"></div>
+            <h4 class="popup__title">Пользователь успешно зарегистрирован!</h4>
+            <span class="popup__or"><span class="popup__or-click" id="open-login-modal">Выполнить вход</span></span>
+          </form>
+        </section>
+
         <div class="overlay"></div>
       </div>
 

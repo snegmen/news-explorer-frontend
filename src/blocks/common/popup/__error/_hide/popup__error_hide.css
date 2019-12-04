@@ -1,0 +1,4 @@
+.popup__error.popup__error_hide {
+  opacity: 0;
+  transition: .5s;
+}

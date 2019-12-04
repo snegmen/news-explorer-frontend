@@ -1,0 +1,14 @@
+@import url(_user/popup__error_user.css);
+@import url(_hide/popup__error_hide.css);
+
+.popup__error {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #ff0000;
+  width: 100%;
+  display: inline-block;
+  margin: 0;
+}
