@@ -13,24 +13,26 @@
 </head>
 
 <body>
-<header class="header header_white">
-    <nav class="heading heading__black">
+  <header class="header header_white">
+    <nav class="heading heading_black">
       <a href="../" class="heading__logo heading__logo_black">News Explorer</a>
       <div class="heading__mobile heading__mobile_black" id="mobile-menu"></div>
       <ul class="heading__list">
-        <li class="heading__item"><a href="../" class="heading__link heading__link_black">Главная</a></li>
-        <li class="heading__item"><a href="../about/" class="heading__link heading__link_black">О проекте</a></li>
-        <li class="heading__item heading__item_selected-black"><a href="./" class="heading__link  heading__link_selected-black">Сохранённые статьи</a></li>
-        <li class="heading__item"><a href="#" class="heading__link heading__link_logged heading__link_logged-black heading__link_selected-black">Lenin
-          <div class="heading__logout heading__logout_black"></div></a></li>
+        <li class="heading__list-item"><a href="../" class="heading__link heading__link_black">Главная</a></li>
+        <li class="heading__list-item"><a href="../about/" class="heading__link heading__link_black">О проекте</a></li>
+        <li class="heading__list-item heading__list-item_selected-black"><a href="./" class="heading__link heading__link_selected-black">Сохраненные статьи</a></li>
+        <li class="heading__list-item"><span class="heading__link heading__link_logged heading__link_logged-black">Lenin
+          <span class="heading__out heading__out_black"></span></span></li>
       </ul>
     </nav>
   </header>
+
   <section class="saved-description">
     <h5 class="saved-description__subtitle">Сохранённые статьи</h5>
     <h1 class="saved-description__title">Lenin, у вас 5 сохраненных статей</h1>
     <p class="saved-description__keywords">По ключевым словам: <b>Природа, Тайга</b> и <b>2 другим</b></p>
   </section>
+
   <footer class="footer">
     <p class="footer__copyright">&#169; 2019 snegmen</p>
     <nav>
@@ -49,6 +51,11 @@
       </a>
     </p>
   </footer>
+
+  <div id="hiding-blocks">
+    <div class="overlay"></div>
+  </div>
+
   <script src="<%= htmlWebpackPlugin.files.chunks.articles.entry %>"></script>
 </body>
 

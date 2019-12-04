@@ -1,3 +1,13 @@
+.heading__link.heading__link_black {
+  color: #b6bcbf;
+}
+
 .heading__link.heading__link_black:hover {
   color: #000;
+}
+
+@media screen and (max-width: 767px) {
+  .heading__link.heading__link_black {
+    color: #000;
+  }
 }

@@ -14,7 +14,7 @@
 
 <body>
   <header class="header">
-    <nav class="heading">
+    <!-- <nav class="heading">
       <a href="./" class="heading__logo">News Explorer</a>
       <div class="heading__mobile" id="mobile-menu"></div>
       <ul class="heading__list">
@@ -22,6 +22,16 @@
         <li class="heading__item"><a href="./about/" class="heading__link">О проекте</a></li>
         <li class="heading__item"><a href="./articles/" class="heading__link">Сохранённые статьи</a></li>
         <li class="heading__item"><a href="#" class="heading__link heading__link_logged">Lenin<div class="heading__logout"></div></a></li>
+      </ul>
+    </nav> -->
+    <nav class="heading">
+      <a href="./" class="heading__logo">News Explorer</a>
+      <div class="heading__mobile" id="mobile-menu"></div>
+      <ul class="heading__list">
+        <li class="heading__list-item heading__list-item_selected"><a href="./" class="heading__link heading__link_selected">Главная</a></li>
+        <li class="heading__list-item"><a href="./about/" class="heading__link">О проекте</a></li>
+        <li class="heading__list-item"><a href="./articles/" class="heading__link">Сохраненные статьи</a></li>
+        <li class="heading__list-item"><span class="heading__link heading__link_logged">Lenin<span class="heading__out"></span></span></li>
       </ul>
     </nav>
     <div class=search>
@@ -99,6 +109,22 @@
             </div>
             <p class="card__source">Наука и техника</p>
           </a>
+          <a href="#" class="card">
+            <div class="card__upper-body">
+              <div class="card__picture"></div>
+              <div class="card__icon"></div>
+              <p class="card__balloon">Войдите, чтобы сохранять статьи</p>
+              <div class="card__wrapper">
+                <p class="card__date">26 ноября 2019</p>
+                <h4 class="card__title">Львы видят эти иллюзии так же, как и вы. И разрывают их в клочья</h4>
+                <p class="card__text">Миллионы пользователей сходятся во мнении, что, хотя социальные сети
+                  имеют множество недостатков, у них все-таки есть приятные аспекты. Это вирусные иллюзии и
+                  милые видео с котиками. «А если их совместить?», – подумали ученые.
+                </p>
+              </div>
+            </div>
+            <p class="card__source">Наука и техника</p>
+          </a>
         </div>
         <button class="button results__button">Показать еще</button>
       </main>
@@ -134,6 +160,10 @@
           </a>
         </p>
       </footer>
+
+      <div id="hiding-blocks">
+        <div class="overlay"></div>
+      </div>
 
   <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
 </body>

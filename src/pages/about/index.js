@@ -1,7 +1,10 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-undef */
 import '../../vendor/normalize.css';
 import '../../../node_modules/swiper/css/swiper.min.css';
 import './index.css';
 import Swiper from 'swiper';
+import { mainMenu } from '../../blocks/heading/heading';
 
 const swiper = new Swiper('.swiper-container', {
   updateOnWindowResize: true,
@@ -36,4 +39,6 @@ const swiper = new Swiper('.swiper-container', {
   },
 });
 
-const commits = new CommitLoader(swiper.update.bind(swiper));
+window.onresize = () => {
+  if (window.innerWidth > 767) mainMenu.close();
+};

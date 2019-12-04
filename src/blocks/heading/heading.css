@@ -1,21 +1,44 @@
+/* @import url(__logo/heading__logo.css);
+@import url(__items/heading__items.css);
+@import url(__link/heading__link.css);
+@import url(__logout/heading__out.css);
+@import url(__mobile/heading__mobile.css); */
 @import url(__logo/heading__logo.css);
 @import url(__list/heading__list.css);
-@import url(__item/heading__item.css);
 @import url(__link/heading__link.css);
-@import url(__logout/heading__logout.css);
 @import url(__mobile/heading__mobile.css);
+@import url(__out/heading__out.css);
 
 .heading {
   height: 80px;
-  display: flex;
-  justify-content: space-between;
-  box-shadow: inset 0 -1px 0 #d1d2d6;
-  box-sizing: border-box;
   position: relative;
+  box-shadow: inset 0px -1px 0px #d1d2d6;
+  display: flex;
+  padding: 0 104px 0 104px;
+  justify-content: space-between;
+  z-index: 10;
+}
+
+.heading_on-top {
+  z-index: 101;
+  background-color: #1a1b22;
+}
+
+.heading_on-top_black {
+  z-index: 101;
+  background-color: #fff;
 }
 
 @media screen and (max-width: 1023px) {
   .heading {
+    padding: 0 40px 0 40px;
     height: 66px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .heading {
+    padding: 0 16px 0 16px;
+    height: 56px;
   }
 }

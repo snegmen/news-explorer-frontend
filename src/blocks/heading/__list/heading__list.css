@@ -1,13 +1,50 @@
+@import url(_selected/heading__list_selected.css);
+
 .heading__list {
-  list-style-type: none;
   display: flex;
-  margin-right: 104px;
-  margin-top: 30px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  z-index: 10;
+}
+
+.heading__list-item {
+  display: flex;
+  height: 100%;
+  margin-right: 32px;
+  box-sizing: border-box;
+  border-top: 3px rgba(255, 255, 255, 0) solid;
+  border-bottom: 3px rgba(255, 255, 255, 0) solid;
+}
+
+.heading__list-item:last-of-type {
+  margin-right: 0;
 }
 
 @media screen and (max-width: 1023px) {
-  .heading__list {
-    margin-top: 22px;
-    margin-right: 40px;
+  .heading__list-item {
+    margin-right: 16px;
   }
+  .heading__list {
+    display: block;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .heading__list {
+    position: absolute;
+    top: 56px;
+    left: 0px;
+    width: 100%;
+    display: none;
+    background-color: #1a1b22;
+  }
+  .heading__list-item {
+    margin: 30px 16px 30px 16px;
+  }
+}
+
+.heading__list_show {
+  display: block;
 }

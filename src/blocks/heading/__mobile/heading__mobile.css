@@ -1,5 +1,5 @@
-@import url(_close/heading__mobile_close.css);
-@import url(_black/heading__mobile_black.css);
+@import url(./_close/heading__mobile_close.css);
+@import url(./_black/heading__mobile_black.css);
 
 .heading__mobile {
   width: 24px;
@@ -11,12 +11,11 @@
   background-image: url(../../../images/menu_white.svg);
   cursor: pointer;
   display: none;
+  z-index: 10;
 }
 
 @media screen and (max-width: 767px) {
   .heading__mobile {
     display: block;
-    position: absolute;
-    right: 16px;
   }
 }

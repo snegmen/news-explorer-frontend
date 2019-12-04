@@ -1,11 +1,9 @@
+/* eslint-disable no-undef */
+/* eslint-disable no-unused-vars */
+import './vendor/normalize.css';
 import './index.css';
-import Menu from './blocks/heading/heading';
+import { mainMenu } from './blocks/heading/heading';
 
-const menu = new Menu(
-  {
-    control: '.heading__mobile',
-    items: '.heading__list',
-    menu: '.heading',
-  },
-  overlay,
-)
+window.onresize = () => {
+  if (window.innerWidth > 767) mainMenu.close();
+};
