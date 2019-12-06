@@ -32,3 +32,5 @@
 - npm run build - продакшен версия
 - npm run deploy - загрузка на хостинг
 - nmp run pages - деплой на gh-pages
+
+[Страница на gh-pages](https://snegmen.github.io/news-explorer-frontend/)
