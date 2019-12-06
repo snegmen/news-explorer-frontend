@@ -1,12 +1,33 @@
-@import url(_hide/popup__wrap_hide.css);
-
 .popup__wrap {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 34px 35px 28px;
+  border-radius: 16px;
+  width: 430px;
+  box-sizing: border-box;
   z-index: 200;
-  display: flex;
-  background-color: rgba(0, 0, 0, .5);
+}
+
+@media screen and (max-width: 767px) {
+  .popup__wrap {
+    transform: translate(0, 0);
+    position: absolute;
+    top: 56px;
+    left: 0;
+    padding: 16px;
+    width: 100%;
+    height: calc(100vh - 56px);
+    box-sizing: border-box;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    z-index: 200;
+  }
+
+  .popup__wrap + .overlay {
+    opacity: 0;
+    transition: .5s;
+  }
 }

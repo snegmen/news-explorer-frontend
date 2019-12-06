@@ -1,0 +1,17 @@
+.noscroll {
+  overflow: hidden;
+}
+
+.noscroll .overlay {
+  display: flex;
+}
+
+@media screen and (max-width: 767px) {
+  .noscroll .heading__mobile {
+    display: none;
+  }
+
+  .noscroll .overlay {
+    display: none;
+  }
+}
