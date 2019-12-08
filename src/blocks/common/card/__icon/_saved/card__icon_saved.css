@@ -5,3 +5,7 @@
 .card__icon.card__icon_saved:hover ~ .card__balloon {
   opacity: 0;
 }
+
+.card__icon.card__icon_saved:hover {
+  background-image: url(../../../../../images/saved.svg);
+}
