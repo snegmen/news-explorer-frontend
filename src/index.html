@@ -13,29 +13,32 @@
 </head>
 
 <body>
-  <header class="header">
-    <nav class="heading">
-      <a href="./" class="heading__logo">News Explorer</a>
-      <div class="heading__mobile" id="mobile-menu"></div>
-      <ul class="heading__list">
-        <li class="heading__list-item heading__list-item_selected"><a href="./" class="heading__link heading__link_selected">Главная</a></li>
-        <li class="heading__list-item"><a href="./about/" class="heading__link">О проекте</a></li>
-        <li class="heading__list-item"><a href="./articles/" class="heading__link">Сохранённые статьи</a></li>
-        <li class="heading__list-item"><span class="heading__link heading__link_logged">Lenin<span class="heading__out"></span></span></li>
-      </ul>
-    </nav>
-    <div class=search>
-      <h1 class="search__title">Что в мире творится?</h1>
-      <h3 class="search__subtitle">Находите самые свежие статьи на любую тему
-        и сохраняйте в своём личном кабинете.
-      </h3>
-      <form novalidate class="search__form" name="news-finder" method="POST">
-        <input class="search__form-input" type="text" name="search" placeholder="Введите тему новости" required />
-        <button class="button search__button" type="submit">Искать</button>
-      </form>
-    </div>
-  </header>
-  <section class=preloader>
+  <div class="page">
+    <header class="header">
+      <nav class="heading">
+        <a href="./" class="heading__logo">News Explorer</a>
+        <div class="heading__mobile" id="mobile-menu"></div>
+        <ul class="heading__list">
+          <li class="heading__list-item heading__list-item_selected"><a href="./" class="heading__link heading__link_selected">Главная</a></li>
+          <li class="heading__list-item"><a href="./about/" class="heading__link">О проекте</a></li>
+          <li class="heading__list-item" id="menu-saved-articles"><a href="./articles/" class="heading__link">Сохранённые статьи</a></li>
+          <li class="heading__list-item"><span class="heading__link heading__link_logged"><span id="shown-user-name"></span>
+            <span class="heading__out"></span></span>
+          </li>
+        </ul>
+      </nav>
+      <div class=search>
+        <h1 class="search__title">Что в мире творится?</h1>
+        <h3 class="search__subtitle">Находите самые свежие статьи на любую тему
+          и сохраняйте в своём личном кабинете.
+        </h3>
+        <form novalidate class="search__form" name="news-finder" method="POST">
+          <input class="search__form-input" type="text" name="search" placeholder="Введите тему новости" required />
+          <button class="button search__button" type="submit">Искать</button>
+        </form>
+      </div>
+    </header>
+    <section class=preloader>
       <!-- Добавьте(уберите) класс preloader__wrapper_hide -->
       <div class="preloader__wrapper preloader__wrapper_hide" id="preloader-searching">
         <i class="circle-preloader"></i>
@@ -60,7 +63,7 @@
                 <p class="card__date">26 ноября 2019</p>
                 <h4 class="card__title">Первые танки. Британские «Ромбы»</h4>
                 <p class="card__text">В конце раздела нашей Бронеколлекции, который был посвящен бронепоездам,
-                   мы отмечали, что их золотой век окончился довольно быстро.
+                    мы отмечали, что их золотой век окончился довольно быстро.
                 </p>
               </div>
             </div>
@@ -150,53 +153,55 @@
         </a>
       </p>
     </footer>
+  </div>
 
-      <div id="hiding-blocks">
-        <!-- Уберите(добавьте) класс popup_hide -->
-        <section class="popup popup_hide">
-          <form class="popup__wrap" name="login">
-            <div class="popup__close" id="close-login-form"></div>
-            <h4 class="popup__title">Вход</h4>
-            <span class="popup__subtitle">E-mail</span>
-            <input class="popup__input" name="email" type="email" placeholder="Введите почту" required>
-            <span class="popup__error" id="error-email-login">Неправильный формат email</span>
-            <span class="popup__subtitle">Пароль</span>
-            <input class="popup__input" name="password" type="password" placeholder="Введите пароль" required>
-            <span class="popup__error" id="error-password-login">Введите пароль</span>
-            <button class="button popup__button" name="login-button" type="submit">Войти</button>
-            <span class="popup__or">или<span class="popup__or-click" id="open-signup-form">Зарегистрироваться</span></span>
-          </form>
-        </section>
-        <!-- Уберите(добавьте) класс popup_hide -->
-        <section class="popup popup_hide">
-          <form class="popup__wrap" name="signup">
-            <div class="popup__close" id="close-signup-form"></div>
-            <h4 class="popup__title">Регистрация</h4>
-            <span class="popup__subtitle">E-mail</span>
-            <input class="popup__input" name="email" type="email" placeholder="Введите почту" required>
-            <span class="popup__error" id="error-email">Введите email</span>
-            <span class="popup__subtitle">Пароль</span>
-            <input class="popup__input" name="password" type="password" placeholder="Введите пароль" required minlength="8">
-            <span class="popup__error" id="error-password">Длина пароля не менее 8 символов</span>
-            <span class="popup__subtitle">Имя</span>
-            <input class="popup__input" name="name" placeholder="Введите свое имя" required minlength="2">
-            <span class="popup__error popup__error_user" id="error-name">Введите имя!</span>
-            <span class="popup__error popup__error_hide" id="error-register">Такой пользователь уже есть</span>
-            <button class="button popup__button" name="signup-button" type="submit">Зарегистрироваться</button>
-            <span class="popup__or">или<span class="popup__or-click" id="open-login-form">Войти</span></span>
-          </form>
-        </section>
-        <!-- Уберите(добавьте) класс popup_hide -->
-        <section class="popup popup_hide" id="signup-ok">
-          <form class="popup__wrap">
-            <div class="popup__close" id="close-signup-ok-form"></div>
-            <h4 class="popup__title">Пользователь успешно зарегистрирован!</h4>
-            <span class="popup__or"><span class="popup__or-click" id="open-login-modal">Выполнить вход</span></span>
-          </form>
-        </section>
+  <div id="hiding-blocks">
+    <!-- Уберите(добавьте) класс popup_hide -->
+    <section class="popup popup_hide" id="login-form">
+      <form class="popup__wrap" name="login">
+        <div class="popup__close" id="close-login-form"></div>
+        <h4 class="popup__title">Вход</h4>
+        <span class="popup__subtitle">E-mail</span>
+        <input class="popup__input" name="email" id="email" type="email" placeholder="Введите почту" required>
+        <span class="popup__error popup__error_hide" id="error-email">Неправильный формат email</span>
+        <span class="popup__subtitle">Пароль</span>
+        <input class="popup__input" name="password" id="password" type="password" placeholder="Введите пароль" required>
+        <span class="popup__error popup__error_hide" id="error-password">Введите пароль</span>
+        <span class="popup__error popup__error_hide popup__error_user" id="login-fatal">Неправильный логин или пароль</span>
+        <button class="button popup__button" name="login-button" type="submit">Войти</button>
+        <span class="popup__or">или<span class="popup__or-click" id="open-signup-form">Зарегистрироваться</span></span>
+      </form>
+    </section>
+    <!-- Уберите(добавьте) класс popup_hide -->
+    <section class="popup popup_hide">
+      <form class="popup__wrap" name="signup">
+        <div class="popup__close" id="close-signup-form"></div>
+        <h4 class="popup__title">Регистрация</h4>
+        <span class="popup__subtitle">E-mail</span>
+        <input class="popup__input" name="email" type="email" placeholder="Введите почту" required>
+        <span class="popup__error" id="error-email">Введите email</span>
+        <span class="popup__subtitle">Пароль</span>
+        <input class="popup__input" name="password" type="password" placeholder="Введите пароль" required minlength="8">
+        <span class="popup__error" id="error-password">Длина пароля не менее 8 символов</span>
+        <span class="popup__subtitle">Имя</span>
+        <input class="popup__input" name="name" placeholder="Введите свое имя" required minlength="2">
+        <span class="popup__error popup__error_user" id="error-name">Введите имя!</span>
+        <span class="popup__error popup__error_hide" id="error-register">Такой пользователь уже есть</span>
+        <button class="button popup__button" name="signup-button" type="submit">Зарегистрироваться</button>
+        <span class="popup__or">или<span class="popup__or-click" id="open-login-form">Войти</span></span>
+      </form>
+    </section>
+    <!-- Уберите(добавьте) класс popup_hide -->
+    <section class="popup popup_hide" id="signup-ok">
+      <form class="popup__wrap">
+        <div class="popup__close" id="close-signup-ok-form"></div>
+        <h4 class="popup__title">Пользователь успешно зарегистрирован!</h4>
+        <span class="popup__or"><span class="popup__or-click" id="open-login-modal">Выполнить вход</span></span>
+      </form>
+    </section>
 
-        <div class="overlay"></div>
-      </div>
+    <div class="overlay"></div>
+  </div>
 
   <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
 </body>
