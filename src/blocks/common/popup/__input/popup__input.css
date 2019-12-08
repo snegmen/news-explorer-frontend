@@ -1,0 +1,19 @@
+.popup__input {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000;
+  width: 100%;
+  margin: 9px 0 3px 0;
+  padding: 10px 0 10px 0;
+  box-sizing: border-box;
+  background-color: #fff;
+  border: 0;
+  border-bottom: 1px solid #cccccc;
+}
+
+.popup__input::placeholder {
+  color: #cccccc;
+}

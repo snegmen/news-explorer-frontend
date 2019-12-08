@@ -1,0 +1,10 @@
+.slider__commit-text {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1a1b22;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}

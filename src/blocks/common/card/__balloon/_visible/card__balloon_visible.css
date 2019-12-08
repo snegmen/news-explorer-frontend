@@ -1,0 +1,4 @@
+.card__balloon.card__balloon_visible {
+  opacity: 1;
+  transition: .5s;
+}

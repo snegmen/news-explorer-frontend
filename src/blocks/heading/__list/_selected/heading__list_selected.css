@@ -1,0 +1,19 @@
+.heading__list-item.heading__list-item_selected {
+  border-bottom: 2.5px #e5e5e5 solid;
+}
+
+@media screen and (max-width: 767px) {
+  .heading__list-item.heading__list-item_selected {
+    border: 0;
+  }
+}
+
+.heading__list-item.heading__list-item_selected-black {
+  border-bottom: 2.5px #000 solid;
+}
+
+@media screen and (max-width: 767px) {
+  .heading__list-item.heading__list-item_selected-black {
+    border: 0;
+  }
+}

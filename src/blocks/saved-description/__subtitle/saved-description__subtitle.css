@@ -1,0 +1,21 @@
+.saved-description__subtitle {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: rgba(26, 27, 34, 0.5);
+  margin: 0;
+}
+
+@media screen and (max-width: 1023px) {
+  .saved-description__subtitle {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .saved-description__subtitle {
+    font-size: 12px;
+  }
+}

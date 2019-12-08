@@ -1,0 +1,11 @@
+.heading__link.heading__link_selected {
+  color: #fff;
+}
+
+.heading__link.heading__link_selected-black {
+  color: #000;
+}
+
+.heading__link.heading__link_selected-black:hover {
+  color: #000;
+}

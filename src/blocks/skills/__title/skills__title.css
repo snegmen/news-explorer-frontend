@@ -1,0 +1,23 @@
+.skills__title {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 46px;
+  color: #1a1b22;
+  width: 334px;
+  margin: 0;
+}
+
+@media screen and (max-width: 1023px) {
+  .skills__title {
+    font-size: 30px;
+    line-height: 34px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .skills__title {
+    width: 288px;
+  }
+}

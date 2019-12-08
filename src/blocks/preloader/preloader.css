@@ -1,0 +1,10 @@
+@import url(../common/circle-preloader/circle-preloader.css);
+@import url(../preloader/__wrapper/preloader__wrapper.css);
+@import url(../preloader/__subtitle/preloader__subtitle.css);
+@import url(../preloader/__icon/preloader__icon.css);
+@import url(../preloader/__title/preloader__title.css);
+
+.preloader {
+  background: #f5f6f7;
+  padding: 80px 0 80px 0;
+}

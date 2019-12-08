@@ -1,0 +1,12 @@
+.preloader__subtitle {
+  color: #b6bcbf;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  margin: 24px auto 0;
+  max-width: 356px;
+  text-align: center;
+  padding: 0 10px;
+}

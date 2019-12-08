@@ -1,0 +1,5 @@
+.popup__error.popup__error_user {
+  position: relative;
+  top: 10px;
+  display: inline-block;
+}

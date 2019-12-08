@@ -1,0 +1,5 @@
+@import url(./_black/heading__mobile_close_black.css);
+
+.heading__mobile.heading__mobile_close {
+  background-image: url(../../../../images/close-white.svg);
+}

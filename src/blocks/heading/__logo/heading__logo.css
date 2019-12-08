@@ -1,0 +1,19 @@
+@import url(_black/heading__logo_black.css);
+
+.heading__logo {
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  align-self: center;
+  z-index: 10;
+}
+
+@media screen and (max-width: 767px) {
+  .heading__logo {
+    font-size: 16px;
+  }
+}
