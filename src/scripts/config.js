@@ -5,7 +5,7 @@ const config = {
   logout: 'https://api.newsyp.tk/logout',
   getUser: 'https://api.newsyp.tk/users/me',
   articles: 'https://api.newsyp.tk/articles',
-  git: 'https://github.com/snegmen/news-explorer-frontend/commits',
+  git: 'https://api.github.com/repos/snegmen/news-explorer-frontend/commits',
   maxGitCommits: 15,
   month: ['января', 'февраля', 'марта', 'апреля', 'мая', 'июня', 'июля', 'августа',
     'сентября', 'октября', 'ноября', 'декабря'],

@@ -4,7 +4,8 @@ import '../../vendor/normalize.css';
 import '../../../node_modules/swiper/css/swiper.min.css';
 import './index.css';
 import Swiper from 'swiper';
-import { mainMenu } from '../../blocks/heading/heading';
+import { menuOperator, mainMenu } from '../../blocks/heading/heading';
+import CommitLoader from '../../scripts/commits';
 
 const swiper = new Swiper('.swiper-container', {
   updateOnWindowResize: true,
@@ -38,6 +39,8 @@ const swiper = new Swiper('.swiper-container', {
     prevEl: '.swiper-button-prev',
   },
 });
+
+const commits = new CommitLoader(swiper.update.bind(swiper));
 
 window.onresize = () => {
   if (window.innerWidth > 767) mainMenu.close();
