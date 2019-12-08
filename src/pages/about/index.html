@@ -21,8 +21,9 @@
         <ul class="heading__list">
           <li class="heading__list-item"><a href="../" class="heading__link heading__link_black">Главная</a></li>
           <li class="heading__list-item heading__list-item_selected-black"><a href="./" class="heading__link heading__link_selected-black">О проекте</a></li>
-          <li class="heading__list-item"><a href="../articles/" class="heading__link heading__link_black">Сохранённые статьи</a></li>
-          <li class="heading__list-item"><span class="heading__link heading__link_logged heading__link_logged-black">Lenin
+          <li class="heading__list-item" id="menu-saved-articles"><a href="../articles/" class="heading__link heading__link_black">Сохранённые статьи</a></li>
+          <li class="heading__list-item"><span class="heading__link heading__link_logged heading__link_logged-black">
+            <span id="shown-user-name"></span>
             <span class="heading__out heading__out_black"></span></span></li>
         </ul>
       </nav>
@@ -76,139 +77,26 @@
       <div class="swiper-button-prev"></div>
       <div class="swiper-container">
         <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <a href="#" class="slider__commit-card">
-              <p class="slider__commit-date">03 декабря, 2019</p>
-              <div class="slider__commit-person">
-                <img class="slider__commit-image" src="../<%= require('../../images/ii.jpg')%>"
-                  alt="Фото из GitHub">
-                <div>
-                  <h4 class="slider__commit-name">1. Антон Дмитриев</h4>
-                  <p class="slider__commit-email">anton@yandex.ru</p>
+          <template id="commit-sample">
+            <div class="swiper-slide">
+              <div class="slider__commit-card">
+                <p class="slider__commit-date"></p>
+                <div class="slider__commit-person">
+                  <img class="slider__commit-image" src="" alt="Фото профиля GitHub">
+                  <div>
+                    <h4 class="slider__commit-name"></h4>
+                    <p class="slider__commit-email"></p>
+                  </div>
                 </div>
+                <p class="slider__commit-text"></p>
               </div>
-              <p class="slider__commit-text">
-                You can install this plugin directly from NetBeans Plugin Portal: in NetBeans, open Tools > Plugins > Available plugins and find and install Emmet.
-              </p>
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <a href="#" class="slider__commit-card">
-              <p class="slider__commit-date">03 декабря, 2019</p>
-              <div class="slider__commit-person">
-                <img class="slider__commit-image" src="../<%= require('../../images/ii.jpg')%>"
-                  alt="Фото из GitHub">
-                <div>
-                  <h4 class="slider__commit-name">2. Антон Дмитриев</h4>
-                  <p class="slider__commit-email">anton@yandex.ru</p>
-                </div>
-              </div>
-              <p class="slider__commit-text">
-                You can install this plugin directly from NetBeans Plugin Portal: in NetBeans, open Tools > Plugins > Available plugins and find and install Emmet.
-              </p>
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <a href="#" class="slider__commit-card">
-              <p class="slider__commit-date">03 декабря, 2019</p>
-              <div class="slider__commit-person">
-                <img class="slider__commit-image" src="../<%= require('../../images/ii.jpg')%>"
-                  alt="Фото из GitHub">
-                <div>
-                  <h4 class="slider__commit-name">3. Антон Дмитриев</h4>
-                  <p class="slider__commit-email">anton@yandex.ru</p>
-                </div>
-              </div>
-              <p class="slider__commit-text">
-                You can install this plugin directly from NetBeans Plugin Portal: in NetBeans, open Tools > Plugins > Available plugins and find and install Emmet.
-              </p>
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <a href="#" class="slider__commit-card">
-              <p class="slider__commit-date">03 декабря, 2019</p>
-              <div class="slider__commit-person">
-                <img class="slider__commit-image" src="../<%= require('../../images/ii.jpg')%>"
-                  alt="Фото из GitHub">
-                <div>
-                  <h4 class="slider__commit-name">4. Антон Дмитриев</h4>
-                  <p class="slider__commit-email">anton@yandex.ru</p>
-                </div>
-              </div>
-              <p class="slider__commit-text">
-                You can install this plugin directly from NetBeans Plugin Portal: in NetBeans, open Tools > Plugins > Available plugins and find and install Emmet.
-              </p>
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <a href="#" class="slider__commit-card">
-              <p class="slider__commit-date">03 декабря, 2019</p>
-              <div class="slider__commit-person">
-                <img class="slider__commit-image" src="../<%= require('../../images/ii.jpg')%>"
-                  alt="Фото из GitHub">
-                <div>
-                  <h4 class="slider__commit-name">5. Антон Дмитриев</h4>
-                  <p class="slider__commit-email">anton@yandex.ru</p>
-                </div>
-              </div>
-              <p class="slider__commit-text">
-                You can install this plugin directly from NetBeans Plugin Portal: in NetBeans, open Tools > Plugins > Available plugins and find and install Emmet.
-              </p>
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <a href="#" class="slider__commit-card">
-              <p class="slider__commit-date">03 декабря, 2019</p>
-              <div class="slider__commit-person">
-                <img class="slider__commit-image" src="../<%= require('../../images/ii.jpg')%>"
-                  alt="Фото из GitHub">
-                <div>
-                  <h4 class="slider__commit-name">6. Антон Дмитриев</h4>
-                  <p class="slider__commit-email">anton@yandex.ru</p>
-                </div>
-              </div>
-              <p class="slider__commit-text">
-                You can install this plugin directly from NetBeans Plugin Portal: in NetBeans, open Tools > Plugins > Available plugins and find and install Emmet.
-              </p>
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <a href="#" class="slider__commit-card">
-              <p class="slider__commit-date">03 декабря, 2019</p>
-              <div class="slider__commit-person">
-                <img class="slider__commit-image" src="../<%= require('../../images/ii.jpg')%>"
-                  alt="Фото из GitHub">
-                <div>
-                  <h4 class="slider__commit-name">7. Антон Дмитриев</h4>
-                  <p class="slider__commit-email">anton@yandex.ru</p>
-                </div>
-              </div>
-              <p class="slider__commit-text">
-                You can install this plugin directly from NetBeans Plugin Portal: in NetBeans, open Tools > Plugins > Available plugins and find and install Emmet.
-              </p>
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <a href="#" class="slider__commit-card">
-              <p class="slider__commit-date">03 декабря, 2019</p>
-              <div class="slider__commit-person">
-                <img class="slider__commit-image" src="../<%= require('../../images/ii.jpg')%>"
-                  alt="Фото из GitHub">
-                <div>
-                  <h4 class="slider__commit-name">8. Антон Дмитриев</h4>
-                  <p class="slider__commit-email">anton@yandex.ru</p>
-                </div>
-              </div>
-              <p class="slider__commit-text">
-                You can install this plugin directly from NetBeans Plugin Portal: in NetBeans, open Tools > Plugins > Available plugins and find and install Emmet.
-              </p>
-            </a>
-          </div>
+            </div>
+          </template>
         </div>
         <div class="swiper-pagination"></div>
       </div>
       <div class="swiper-button-next next"></div>
-      <a class="button slider__git-button">Открыть в GitHub</a>
+      <a class="button slider__git-button" href="https://github.com/snegmen/" target="_blank">Открыть в GitHub</a>
     </section>
 
     <footer class="footer">
