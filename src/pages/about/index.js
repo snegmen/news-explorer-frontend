@@ -9,6 +9,7 @@ import { menuOperator, mainMenu } from '../../blocks/heading/heading';
 import HeadingMenu from '../../scripts/heading-menu';
 import CommitsLoad from '../../scripts/commits-load';
 import CommitsRendering from '../../scripts/commits-rendering';
+import Popup from '../../blocks/common/popup/popup';
 
 const userMenu = new HeadingMenu();
 userMenu.init();
