@@ -35,7 +35,7 @@
           </h3>
           <form novalidate class="search__form" name="news-finder" method="POST">
             <input class="search__form-input" type="text" name="search" placeholder="Введите тему новости" required />
-            <button class="button search__button" type="submit">Искать</button>
+            <button class="button search__button" id="search-the-news" type="submit">Искать</button>
           </form>
         </div>
       </header>
@@ -76,7 +76,7 @@
             </a>
           </template>
         </div>
-        <button class="button results__button">Показать еще</button>
+        <button class="button results__button" id="show-more">Показать еще</button>
       </main>
       <section class="about">
         <img class="about__photo" src="<%= require('./images/ii.jpg')%>" alt="Автопортрет">
@@ -150,7 +150,7 @@
       </section>
       <!-- Уберите(добавьте) класс popup_hide -->
       <section class="popup popup_hide" id="signup-ok">
-        <form class="popup__wrap" name="is-ok">
+        <form class="popup__wrap" name="it-is-ok">
           <div class="popup__close" id="close-signup-ok-form"></div>
           <h4 class="popup__title">Пользователь успешно зарегистрирован!</h4>
           <span class="popup__or popup__or_left">
@@ -160,6 +160,10 @@
       </section>
 
       <div class="overlay"></div>
+      <div class="sys-error" id="system-error">
+        <div class="sys-error__close"></div>
+        <p class="sys-error__message" id="system-error-message"></p>
+      </div>
     </div>
   </div>
   <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>

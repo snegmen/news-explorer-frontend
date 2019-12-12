@@ -1,0 +1,53 @@
+.sys-error {
+  display: block;
+  position: relative;
+  max-width: 230px;
+  min-width: 230px;
+}
+.sys-error_on {
+  z-index: 300;
+  position: fixed;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #c13335;
+  padding: 20px;
+  border-radius: 16px;
+  color: white;
+  cursor: pointer;
+  font-size: 0.87rem;
+  text-align: center;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 1);
+}
+
+.sys-error__message {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+  font-weight: bold;
+}
+.sys-error__message_sub {
+  margin-top: 10px;
+  font-size: 0.75rem;
+  font-weight: normal;
+}
+
+.sys-error__close {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: -15px;
+  right: -15px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../../../images/close-white.svg);
+  cursor: pointer;
+  background-color: #c13335;
+  border-radius: 50%;
+}

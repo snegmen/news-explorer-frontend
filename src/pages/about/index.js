@@ -5,13 +5,15 @@ import '../../../node_modules/swiper/css/swiper.min.css';
 import './index.css';
 import Swiper from 'swiper';
 import config from '../../scripts/config';
-import { menuOperator, mainMenu } from '../../blocks/heading/heading';
+import { mainMenu } from '../../blocks/heading/heading';
 import HeadingMenu from '../../scripts/heading-menu';
 import Popup from '../../blocks/common/popup/popup';
+import ShowError from '../../blocks/common/error/error';
 import ApiBack from '../../scripts/api';
 import CommitsLoad from '../../scripts/commits-load';
 import CommitsRendering from '../../scripts/commits-rendering';
 
+const showError = new ShowError();
 const apiBack = new ApiBack(config);
 
 const loginForm = new Popup(
@@ -19,26 +21,31 @@ const loginForm = new Popup(
   '#signup-form',
   apiBack.login.bind(apiBack),
   apiBack.getUserName.bind(apiBack),
+  showError,
 );
 
 const signupForm = new Popup(
   document.querySelector('#signup-form'),
   '#login-form',
-  apiBack.login.bind(apiBack),
+  apiBack.signUp.bind(apiBack),
   apiBack.getUserName.bind(apiBack),
+  showError,
 );
 
-const regForm = new Popup(
+const regCompleteForm = new Popup(
   document.querySelector('#signup-ok'),
   '#login-form',
-  apiBack.login.bind(apiBack),
-  apiBack.getUserName.bind(apiBack),
+  null,
+  null,
+  showError,
 );
 
 const userMenu = new HeadingMenu(
   loginForm.open.bind(loginForm),
   apiBack.logout.bind(apiBack),
+  showError,
 );
+
 userMenu.init();
 
 const swiper = new Swiper('.swiper-container', {
