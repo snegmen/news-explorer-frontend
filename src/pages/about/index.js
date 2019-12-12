@@ -7,11 +7,25 @@ import Swiper from 'swiper';
 import config from '../../scripts/config';
 import { menuOperator, mainMenu } from '../../blocks/heading/heading';
 import HeadingMenu from '../../scripts/heading-menu';
+import Popup from '../../blocks/common/popup/popup';
+import ApiBack from '../../scripts/api';
 import CommitsLoad from '../../scripts/commits-load';
 import CommitsRendering from '../../scripts/commits-rendering';
-import Popup from '../../blocks/common/popup/popup';
 
-const userMenu = new HeadingMenu();
+const apiBack = new ApiBack(config);
+
+const loginForm = new Popup(
+  document.querySelector('#login-form'),
+  '#signup-form',
+  apiBack.login.bind(apiBack),
+  apiBack.getUserName.bind(apiBack),
+  // showError,
+);
+
+const userMenu = new HeadingMenu(
+  loginForm.open.bind(loginForm),
+  apiBack.logout.bind(apiBack),
+);
 userMenu.init();
 
 const swiper = new Swiper('.swiper-container', {
