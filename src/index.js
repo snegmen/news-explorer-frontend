@@ -2,6 +2,7 @@
 /* eslint-disable no-unused-vars */
 import './vendor/normalize.css';
 import './index.css';
+import config from './scripts/config';
 import { mainMenu, menuOperator } from './blocks/heading/heading';
 
 window.onresize = () => {

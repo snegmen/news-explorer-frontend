@@ -4,8 +4,10 @@ import '../../vendor/normalize.css';
 import '../../../node_modules/swiper/css/swiper.min.css';
 import './index.css';
 import Swiper from 'swiper';
+import config from '../../scripts/config';
 import { menuOperator, mainMenu } from '../../blocks/heading/heading';
-import CommitLoader from '../../scripts/commits';
+import CommitsLoad from '../../scripts/commits-load';
+import CommitsRendering from '../../scripts/commits-rendering';
 
 const swiper = new Swiper('.swiper-container', {
   updateOnWindowResize: true,
@@ -40,7 +42,14 @@ const swiper = new Swiper('.swiper-container', {
   },
 });
 
-const commits = new CommitLoader(swiper.update.bind(swiper));
+const commitsLoad = new CommitsLoad(config.git, config.maxGitCommits);
+const commitsRendering = new CommitsRendering(
+  swiper.update.bind(swiper),
+  commitsLoad.getCommits.bind(commitsLoad),
+  config,
+);
+
+commitsRendering.init();
 
 window.onresize = () => {
   if (window.innerWidth > 767) mainMenu.close();
