@@ -6,8 +6,12 @@ import './index.css';
 import Swiper from 'swiper';
 import config from '../../scripts/config';
 import { menuOperator, mainMenu } from '../../blocks/heading/heading';
+import HeadingMenu from '../../scripts/heading-menu';
 import CommitsLoad from '../../scripts/commits-load';
 import CommitsRendering from '../../scripts/commits-rendering';
+
+const userMenu = new HeadingMenu();
+userMenu.init();
 
 const swiper = new Swiper('.swiper-container', {
   updateOnWindowResize: true,
