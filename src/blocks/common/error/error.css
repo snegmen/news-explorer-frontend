@@ -1,5 +1,5 @@
 .sys-error {
-  display: block;
+  display: none;
   position: relative;
   max-width: 230px;
   min-width: 230px;

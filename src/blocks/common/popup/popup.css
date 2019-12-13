@@ -8,6 +8,11 @@
 @import url(__button/popup__button.css);
 @import url(_hide/popup_hide.css);
 
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
 .popup {
   position: fixed;
   top: 0;
@@ -17,4 +22,11 @@
   z-index: 200;
   display: flex;
   background-color: rgba(0, 0, 0, .5);
+  /* animation-name: zoom;
+  animation-duration: 0.6s; */
+}
+
+.popup + .overlay {
+  opacity: 0;
+  transition: 0.3s;
 }
