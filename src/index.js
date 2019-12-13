@@ -5,11 +5,13 @@ import './index.css';
 import config from './scripts/config';
 import { mainMenu } from './blocks/heading/heading';
 import Popup from './blocks/common/popup/popup';
-import ShowError from './blocks/common/error/error';
+import SysError from './blocks/common/error/error';
 import ApiBack from './scripts/api';
 import HeadingMenu from './scripts/heading-menu';
+// import NewsApi from './scripts/news-api';
+// import NewsRender from './scripts/news-rendering';
 
-const showError = new ShowError();
+const sysError = new SysError();
 const apiBack = new ApiBack(config);
 
 const loginForm = new Popup(
@@ -17,7 +19,7 @@ const loginForm = new Popup(
   '#signup-form',
   apiBack.login.bind(apiBack),
   apiBack.getUserName.bind(apiBack),
-  showError,
+  sysError,
 );
 
 const signupForm = new Popup(
@@ -25,24 +27,34 @@ const signupForm = new Popup(
   '#login-form',
   apiBack.signUp.bind(apiBack),
   apiBack.getUserName.bind(apiBack),
-  showError,
+  sysError,
 );
 
-const regCompleteForm = new Popup(
+const regForm = new Popup(
   document.querySelector('#signup-ok'),
   '#login-form',
   null,
   null,
-  showError,
+  sysError,
 );
 
 const userMenu = new HeadingMenu(
   loginForm.open.bind(loginForm),
   apiBack.logout.bind(apiBack),
-  showError,
+  sysError,
 );
 
 userMenu.init();
+
+// const newsApi = new NewsApi(config.newsFeed);
+
+// const newsRender = new NewsRender(
+//   newsApi.getNews.bind(newsApi),
+//   apiBack.saveArticle.bind(apiBack),
+//   apiBack.deleteArticle.bind(apiBack),
+//   sysError,
+//   config,
+// );
 
 window.onresize = () => {
   if (window.innerWidth > 767) mainMenu.close();

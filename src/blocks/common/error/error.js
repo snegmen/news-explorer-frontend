@@ -1,7 +1,7 @@
 /* eslint-disable no-undef */
 import './error.css';
 
-export default class ShowError {
+export default class SysError {
   constructor() {
     this.domElement = document.querySelector('#system-error');
     this.errorMessage = document.querySelector('#system-error-message');

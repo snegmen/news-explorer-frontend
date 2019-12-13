@@ -3,20 +3,22 @@
   position: relative;
   max-width: 230px;
   min-width: 230px;
+  animation-name: zoom;
+  animation-duration: .3s;
 }
 .sys-error_on {
   z-index: 300;
   position: fixed;
   display: block;
-  top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  background: #c13335;
+  top: 50%;
+  margin-left: -135px;
+  background: #f70307;
   padding: 20px;
-  border-radius: 16px;
-  color: white;
+  border-radius: 10px;
+  color: #fff;
   cursor: pointer;
-  font-size: 0.87rem;
+  font-size: 16px;
   text-align: center;
   box-shadow: 0 0 30px rgba(0, 0, 0, 1);
 }
@@ -26,14 +28,14 @@
   font-family: sans-serif;
   margin: 0;
   padding: 0;
-  color: white;
-  font-size: 1rem;
+  color: #fff;
+  font-size: 18px;
   text-align: center;
   font-weight: bold;
 }
 .sys-error__message_sub {
   margin-top: 10px;
-  font-size: 0.75rem;
+  font-size: 14px;
   font-weight: normal;
 }
 
@@ -41,13 +43,12 @@
   position: absolute;
   width: 40px;
   height: 40px;
-  top: -15px;
-  right: -15px;
+  top: -35px;
+  right: -35px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-image: url(../../../images/close-white.svg);
+  background-image: url(../../../images/error-red.png);
   cursor: pointer;
-  background-color: #c13335;
   border-radius: 50%;
 }

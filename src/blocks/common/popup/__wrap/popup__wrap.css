@@ -2,21 +2,24 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  margin-left: -215px;
+  margin-top: -200px;
   background-color: #fff;
   padding: 34px 35px 28px;
   border-radius: 16px;
   width: 430px;
   box-sizing: border-box;
   z-index: 200;
+  animation-name: zoom;
+  animation-duration: .3s;
 }
 
 @media screen and (max-width: 767px) {
   .popup__wrap {
-    transform: translate(0, 0);
     position: absolute;
     top: 56px;
     left: 0;
+    margin: 0;
     padding: 16px;
     width: 100%;
     height: calc(100vh - 56px);
