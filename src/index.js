@@ -8,11 +8,12 @@ import Popup from './blocks/common/popup/popup';
 import SysError from './blocks/common/error/error';
 import ApiBack from './scripts/api';
 import HeadingMenu from './scripts/heading-menu';
-// import NewsApi from './scripts/news-api';
-// import NewsRender from './scripts/news-rendering';
+import NewsApi from './scripts/news-api';
+import NewsRendering from './scripts/news-rendering';
 
 const sysError = new SysError();
 const apiBack = new ApiBack(config);
+const newsApi = new NewsApi(config.newsFeed);
 
 const loginForm = new Popup(
   document.querySelector('#login-form'),
@@ -44,17 +45,15 @@ const userMenu = new HeadingMenu(
   sysError,
 );
 
+const newsRender = new NewsRendering(
+  newsApi.getNews.bind(newsApi),
+  apiBack.saveArticle.bind(apiBack),
+  apiBack.deleteArticle.bind(apiBack),
+  sysError,
+  config,
+);
+
 userMenu.init();
-
-// const newsApi = new NewsApi(config.newsFeed);
-
-// const newsRender = new NewsRender(
-//   newsApi.getNews.bind(newsApi),
-//   apiBack.saveArticle.bind(apiBack),
-//   apiBack.deleteArticle.bind(apiBack),
-//   sysError,
-//   config,
-// );
 
 window.onresize = () => {
   if (window.innerWidth > 767) mainMenu.close();

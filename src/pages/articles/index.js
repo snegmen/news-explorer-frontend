@@ -8,7 +8,7 @@ import HeadingMenu from '../../scripts/heading-menu';
 import Popup from '../../blocks/common/popup/popup';
 import SysError from '../../blocks/common/error/error';
 import ApiBack from '../../scripts/api';
-// import Collection from '../../scripts/articles';
+import ArticlesSaved from '../../scripts/articles';
 
 const sysError = new SysError();
 const apiBack = new ApiBack(config);
@@ -45,12 +45,12 @@ const userMenu = new HeadingMenu(
 
 userMenu.init();
 
-// const myCollection = new Collection(
-//   apiBack.getAllArticles.bind(apiBack),
-//   apiBack.deleteArticle.bind(apiBack),
-//   config,
-//   sysError,
-// );
+const myArticles = new ArticlesSaved(
+  apiBack.getAllArticles.bind(apiBack),
+  apiBack.deleteArticle.bind(apiBack),
+  config,
+  sysError,
+);
 
 window.onresize = () => {
   if (window.innerWidth > 767) mainMenu.close();

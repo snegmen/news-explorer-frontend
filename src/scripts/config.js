@@ -22,6 +22,17 @@ const config = {
     serverError: { node: '#preloader-server-error', hide: 'preloader__wrapper_hide' },
     resultsSection: { node: '.results', hide: 'results_hide' },
   },
+  myArticlles: {
+    myArticllesContainer: '.saved-articles',
+    articlesQty: '.articles-qty',
+    articlesHeader: '.saved-description__title',
+    words: {
+      first: '.first-word',
+      second: '.second-word',
+      more: '.and-more',
+      tail: '.word-tail',
+    },
+  },
   cardSample: '#card-sample',
   card: {
     node: '.card',
@@ -37,17 +48,6 @@ const config = {
       logged: 'card__icon_logged',
       marked: 'card__icon_saved',
       bin: 'card__icon_del',
-    },
-  },
-  collection: {
-    collectionContainer: '.saved-articles',
-    articlesQty: '.articles-qty',
-    articlesHeader: '.saved-description__title',
-    words: {
-      first: '.first-word',
-      second: '.second-word',
-      more: '.and-more',
-      tail: '.word-tail',
     },
   },
   slider: {
