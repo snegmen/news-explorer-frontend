@@ -13,122 +13,125 @@
 </head>
 
 <body>
-  <div class="page">
-    <header class="header header_white">
-      <nav class="heading heading_black">
-        <a href="../" class="heading__logo heading__logo_black">News Explorer</a>
-        <div class="heading__mobile heading__mobile_black" id="mobile-menu"></div>
-        <ul class="heading__list">
-          <li class="heading__list-item"><a href="../" class="heading__link heading__link_black">Главная</a></li>
-          <li class="heading__list-item"><a href="../about/" class="heading__link heading__link_black">О проекте</a></li>
-          <li class="heading__list-item heading__list-item_selected-black"><a href="./" class="heading__link heading__link_selected-black">Сохранённые статьи</a></li>
-          <li class="heading__list-item"><span class="heading__link heading__link_logged heading__link_logged-black">Lenin
-            <span class="heading__out heading__out_black"></span></span></li>
-        </ul>
-      </nav>
-    </header>
+  <div id="scroll" class="scroll-lock">
+    <div class="page">
+      <header class="header header_white">
+        <nav class="heading heading_black">
+          <a href="../" class="heading__logo heading__logo_black">News Explorer</a>
+          <div class="heading__mobile heading__mobile_black" id="mobile-menu"></div>
+          <ul class="heading__list">
+            <li class="heading__list-item"><a href="../" class="heading__link heading__link_black">Главная</a></li>
+            <li class="heading__list-item"><a href="../about/" class="heading__link heading__link_black">О проекте</a></li>
+            <li class="heading__list-item heading__list-item_selected-black" id="menu-saved-articles"><a href="./" class="heading__link heading__link_selected-black">Сохранённые статьи</a></li>
+            <li class="heading__list-item"><span class="heading__link heading__link_logged heading__link_logged-black" id="user-area">
+              <span id="shown-user-name"></span>
+              <span class="heading__out heading__out_black"></span></span></li>
+          </ul>
+        </nav>
+      </header>
 
-    <section class="saved-description">
-      <h5 class="saved-description__subtitle">Сохранённые статьи</h5>
-      <h1 class="saved-description__title">Lenin, у вас 4 сохраненных статей</h1>
-      <p class="saved-description__keywords">По ключевым словам: <b>Природа, Тайга</b> и <b>2 другим</b></p>
-    </section>
+      <section class="saved-description">
+        <h5 class="saved-description__subtitle">Сохранённые статьи</h5>
+        <h1 class="saved-description__title">, у вас <span class="articles-qty"></span></h1>
+        <p class="saved-description__keywords">По ключевым словам: <b><span class="first-word"></span><span class="second-word"></span></b><span
+          class="word-tail"> и <b><span class="and-more"></span>
+            другим</b></span></p>
+      </section>
 
-    <main class="saved-articles">
-      <a href="#" class="card">
-        <div class="card__upper-body">
-          <div class="card__picture"></div>
-          <div class="card__icon card__icon_del"></div>
-          <p class="card__balloon">Убрать из сохраненных</p>
-          <p class="card__keyword">Тайга</p>
-          <div class="card__wrapper">
-            <p class="card__date">26 ноября 2019</p>
-            <h4 class="card__title">Первые танки. Британские «Ромбы»</h4>
-            <p class="card__text">В конце раздела нашей Бронеколлекции, который был посвящен бронепоездам,
-                мы отмечали, что их золотой век окончился довольно быстро.
-            </p>
-          </div>
-        </div>
-        <p class="card__source">Наука и техника</p>
-      </a>
-      <a href="#" class="card">
-        <div class="card__upper-body">
-          <div class="card__picture"></div>
-          <div class="card__icon card__icon_del"></div>
-          <p class="card__balloon">Убрать из сохраненных</p>
-          <p class="card__keyword">Тайга</p>
-          <div class="card__wrapper">
-            <p class="card__date">26 ноября 2019</p>
-            <h4 class="card__title">Долго запрягали – быстро полетят?
-              В ОАК озвучили планы по производству лайнера МС-21</h4>
-            <p class="card__text">Представитель ПАО «Объединённая авиастроительная корпорация»
-              рассказал о подготовке серийного производства лайнеров МС-21. По словам советника
-              гендиректора ОАК, первая партия в шесть машин будет готова к 2021 году
-            </p>
-          </div>
-        </div>
-        <p class="card__source">Наука и техника</p>
-      </a>
-      <a href="#" class="card">
-        <div class="card__upper-body">
-          <div class="card__picture"></div>
-          <div class="card__icon card__icon_del"></div>
-          <p class="card__balloon">Убрать из сохраненных</p>
-          <p class="card__keyword">Тайга</p>
-          <div class="card__wrapper">
-            <p class="card__date">26 ноября 2019</p>
-            <h4 class="card__title">Львы видят эти иллюзии так же, как и вы. И разрывают их в клочья</h4>
-            <p class="card__text">Миллионы пользователей сходятся во мнении, что, хотя социальные сети
-              имеют множество недостатков, у них все-таки есть приятные аспекты. Это вирусные иллюзии и
-              милые видео с котиками. «А если их совместить?», – подумали ученые.
-            </p>
-          </div>
-        </div>
-        <p class="card__source">Наука и техника</p>
-      </a>
-      <a href="#" class="card">
-        <div class="card__upper-body">
-          <div class="card__picture"></div>
-          <div class="card__icon card__icon_del"></div>
-          <p class="card__balloon">Убрать из сохраненных</p>
-          <p class="card__keyword">Тайга</p>
-          <div class="card__wrapper">
-            <p class="card__date">26 ноября 2019</p>
-            <h4 class="card__title">Львы видят эти иллюзии так же, как и вы. И разрывают их в клочья</h4>
-            <p class="card__text">Миллионы пользователей сходятся во мнении, что, хотя социальные сети
-              имеют множество недостатков, у них все-таки есть приятные аспекты. Это вирусные иллюзии и
-              милые видео с котиками. «А если их совместить?», – подумали ученые.
-            </p>
-          </div>
-        </div>
-        <p class="card__source">Наука и техника</p>
-      </a>
-    </main>
+      <main class="saved-articles">
+        <template id="card-sample">
+          <a href="#" class="card">
+            <div class="card__upper-body">
+              <div class="card__picture"></div>
+              <div class="card__icon card__icon_del"></div>
+              <p class="card__balloon">Убрать из сохраненных</p>
+              <p class="card__keyword"></p>
+              <div class="card__wrapper">
+                <p class="card__date"></p>
+                <h4 class="card__title"></h4>
+                <p class="card__text"></p>
+              </div>
+            </div>
+            <p class="card__source"></p>
+          </a>
+        </template>
+      </main>
 
-    <footer class="footer">
-      <p class="footer__copyright">&#169; 2019 snegmen</p>
-      <nav>
-        <ul class="footer__list">
-          <li class="footer__list-item"><a href="../" class="footer__list-item_link">Главная</a></li>
-          <li class="footer__list-item"><a href="../about/" class="footer__list-item_link">О проекте</a></li>
-          <li class="footer__list-item"><a href="https://praktikum.yandex.ru" class="footer__list-item_link" target="_blank">Яндекс.Практикум</a></li>
-        </ul>
-      </nav>
-      <p class="footer__links">
-        <a href="https://github.com/snegmen/" class="footer__icon" target="_blank">
-          <img src="../<%= require('../../images/git.svg')%>" alt="Логотип GitHub">
-        </a>
-        <a href="https://facebook.com" class="footer__icon" target="_blank">
-          <img src="../<%= require('../../images/facebook.svg')%>" alt="Логотип Facebook">
-        </a>
-      </p>
-    </footer>
+      <footer class="footer">
+        <p class="footer__copyright">&#169; 2019 snegmen</p>
+        <nav>
+          <ul class="footer__list">
+            <li class="footer__list-item"><a href="../" class="footer__list-item_link">Главная</a></li>
+            <li class="footer__list-item"><a href="../about/" class="footer__list-item_link">О проекте</a></li>
+            <li class="footer__list-item"><a href="https://praktikum.yandex.ru" class="footer__list-item_link" target="_blank">Яндекс.Практикум</a></li>
+          </ul>
+        </nav>
+        <p class="footer__links">
+          <a href="https://github.com/snegmen/" class="footer__icon" target="_blank">
+            <img src="../<%= require('../../images/git.svg')%>" alt="Логотип GitHub">
+          </a>
+          <a href="https://facebook.com" class="footer__icon" target="_blank">
+            <img src="../<%= require('../../images/facebook.svg')%>" alt="Логотип Facebook">
+          </a>
+        </p>
+      </footer>
+    </div>
+
+    <div id="hiding-blocks">
+      <!-- Уберите(добавьте) класс popup_hide -->
+      <section class="popup popup_hide" id="login-form">
+        <form class="popup__wrap" name="login">
+          <div class="popup__close" id="close-login-form"></div>
+          <h4 class="popup__title">Вход</h4>
+          <span class="popup__subtitle">E-mail</span>
+          <input class="popup__input" name="email" id="email" type="email" placeholder="Введите почту" required>
+          <span class="popup__error popup__error_hide" id="error-email">Неправильный формат email</span>
+          <span class="popup__subtitle">Пароль</span>
+          <input class="popup__input" name="password" id="password" type="password" placeholder="Введите пароль" required>
+          <span class="popup__error popup__error_hide" id="error-password">Введите пароль</span>
+          <span class="popup__error popup__error_hide popup__error_user" id="login-fatal">Неправильный логин или пароль</span>
+          <button class="button popup__button" name="login-button" type="submit">Войти</button>
+          <span class="popup__or">или<span class="popup__or-click" id="open-signup-form">Зарегистрироваться</span></span>
+        </form>
+      </section>
+      <!-- Уберите(добавьте) класс popup_hide -->
+      <section class="popup popup_hide" id="signup-form">
+        <form class="popup__wrap" name="signup">
+          <div class="popup__close" id="close-signup-form"></div>
+          <h4 class="popup__title">Регистрация</h4>
+          <span class="popup__subtitle">E-mail</span>
+          <input class="popup__input" name="email" id="regemail" type="email" placeholder="Введите почту" required>
+          <span class="popup__error popup__error_hide" id="error-regemail">Введите email</span>
+          <span class="popup__subtitle">Пароль</span>
+          <input class="popup__input" name="password" id="regpassword" type="password" placeholder="Введите пароль" required minlength="8">
+          <span class="popup__error popup__error_hide" id="error-regpassword">Длина пароля не менее 8 символов</span>
+          <span class="popup__subtitle">Имя</span>
+          <input class="popup__input" name="username" id="regname" placeholder="Введите свое имя" required minlength="2" pattern="[A-Za-zА-Яа-я]{2,}">
+          <span class="popup__error popup__error_hide" id="error-regname">Введите имя (только буквы не менее 2)</span>
+          <span class="popup__error popup__error_user popup__error_hide" id="signup-fatal">Такой пользователь уже есть</span>
+          <button class="button popup__button" name="signup-button" type="submit">Зарегистрироваться</button>
+          <span class="popup__or">или<span class="popup__or-click" id="open-login-form">Войти</span></span>
+        </form>
+      </section>
+      <!-- Уберите(добавьте) класс popup_hide -->
+      <section class="popup popup_hide" id="signup-ok">
+        <form class="popup__wrap" name="is-ok">
+          <div class="popup__close" id="close-signup-ok-form"></div>
+          <h4 class="popup__title">Пользователь успешно зарегистрирован!</h4>
+          <span class="popup__or popup__or_left">
+            <span class="popup__or-click" id="open-login-modal">Выполнить вход</span>
+          </span>
+        </form>
+      </section>
+
+      <div class="overlay"></div>
+      <div class="sys-error" id="system-error">
+          <div class="sys-error__close"></div>
+          <p class="sys-error__message" id="system-error-message"></p>
+        </div>
+      </div>
+    </div>
   </div>
-
-  <div id="hiding-blocks">
-    <div class="overlay"></div>
-  </div>
-
   <script src="<%= htmlWebpackPlugin.files.chunks.articles.entry %>"></script>
 </body>
 

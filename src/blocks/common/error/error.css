@@ -1,0 +1,54 @@
+.sys-error {
+  display: none;
+  position: relative;
+  max-width: 230px;
+  min-width: 230px;
+  animation-name: zoom;
+  animation-duration: .3s;
+}
+.sys-error_on {
+  z-index: 300;
+  position: fixed;
+  display: block;
+  left: 50%;
+  top: 50%;
+  margin-left: -135px;
+  background: #f70307;
+  padding: 20px;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 1);
+}
+
+.sys-error__message {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+}
+.sys-error__message_sub {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.sys-error__close {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: -35px;
+  right: -35px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../../../images/error-red.png);
+  cursor: pointer;
+  border-radius: 50%;
+}

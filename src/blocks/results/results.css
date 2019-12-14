@@ -9,6 +9,10 @@
   padding-bottom: 80px;
 }
 
+.results_hide {
+  display: none;
+}
+
 @media screen and (max-width: 1023px) {
   .results {
     padding-top: 32px;

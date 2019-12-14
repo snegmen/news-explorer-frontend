@@ -4,7 +4,9 @@
 
 [Адрес страницы проекта](https://newsyp.tk)
 
-## Версия 0.1.0
+[Страница на gh-pages](https://snegmen.github.io/news-explorer-frontend/)
+
+## Версия 0.2.0
 
 ## Технологии
 + CSS, HTML, Webpack, Javascript
@@ -15,9 +17,8 @@
 - «карусель» для коммитов (Swiper / https://swiperjs.com/)
 - адаптивная верстка для трех разрешений
 - настроен Webpack и линтер
-
-Планируется доработка:
-- Реализация JS
+- регистрация на сайте
+- поиск новостей по ключевым словам
 
 ## Установка:
 1. Склонировать репозиторий на локальный компьютер
@@ -32,5 +33,3 @@
 - npm run build - продакшен версия
 - npm run deploy - загрузка на хостинг
 - nmp run pages - деплой на gh-pages
-
-[Страница на gh-pages](https://snegmen.github.io/news-explorer-frontend/)

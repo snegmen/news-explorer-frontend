@@ -13,10 +13,8 @@
     "@babel/cli": "7.5.5",
     "@babel/core": "7.5.5",
     "@babel/preset-env": "7.5.5",
-    "autoprefixer": "9.6.1",
     "babel-loader": "8.0.6",
     "css-loader": "3.2.0",
-    "cssnano": "4.1.10",
     "eslint": "6.4.0",
     "eslint-config-airbnb-base": "14.0.0",
     "eslint-plugin-import": "2.18.2",
@@ -34,8 +32,10 @@
     "webpack-md5-hash": "0.0.6"
   },
   "dependencies": {
+    "autoprefixer": "9.6.1",
     "babel-polyfill": "6.26.0",
     "core-js": "3.1.4",
+    "cssnano": "4.1.10",
     "cross-env": "6.0.3",
     "dotenv": "8.2.0",
     "swiper": "5.2.1",

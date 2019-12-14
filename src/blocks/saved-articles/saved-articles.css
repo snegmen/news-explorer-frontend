@@ -7,6 +7,7 @@
   column-gap: 16px;
   row-gap: 16px;
   background-color: #f5f6f7;
+  min-height: 50vmax;
 }
 
 @media screen and (max-width: 1023px) {

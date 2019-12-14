@@ -1,0 +1,3 @@
+.card__icon.card__icon_logged:hover ~ .card__balloon {
+  opacity: 0;
+}

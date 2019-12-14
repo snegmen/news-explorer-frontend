@@ -10,3 +10,19 @@
   cursor: pointer;
   position: absolute;
 }
+
+@media screen and (max-width: 1023px) {
+  .popup__close {
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .popup__close {
+    opacity: 1;
+    top: -40px;
+    right: 16px;
+    width: 24px;
+    height: 24px;
+  }
+}
