@@ -4,6 +4,8 @@
 
 [Адрес страницы проекта](https://newsyp.tk)
 
+[Страница на gh-pages](https://snegmen.github.io/news-explorer-frontend/)
+
 ## Версия 0.1.0
 
 ## Технологии
@@ -31,5 +33,3 @@
 - npm run build - продакшен версия
 - npm run deploy - загрузка на хостинг
 - nmp run pages - деплой на gh-pages
-
-[Страница на gh-pages](https://snegmen.github.io/news-explorer-frontend/)
