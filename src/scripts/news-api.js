@@ -1,13 +1,13 @@
 /* eslint-disable no-undef */
 export default class NewsApi {
-  constructor(newsFeed) {
+  constructor(newsFeed, sevenDays) {
     this.newsFeed = newsFeed;
+    this.sevenDays = sevenDays;
   }
 
   getNews(query) {
     const dateNow = new Date();
-    const sevenDays = 7 * 24 * 3600 * 1000;
-    const dateWeekAgo = new Date(dateNow - sevenDays);
+    const dateWeekAgo = new Date(dateNow - this.sevenDays);
     const dateTo = `${dateNow.getFullYear()}-${dateNow.getMonth() + 1}-${dateNow.getDate()}`;
     const dateFrom = `${dateWeekAgo.getFullYear()}-${dateWeekAgo.getMonth() + 1}-${dateWeekAgo.getDate()}`;
     const url = `${this.newsFeed}&q=${query}&from=${dateFrom}&to=${dateTo}`;

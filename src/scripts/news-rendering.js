@@ -98,7 +98,7 @@ export default class NewsRendering {
     if (this._news.length !== 0) {
       this._clearResultsList();
     }
-    // this._blockForm();
+    this._blockForm();
     this.getNews(key)
       .then((data) => {
         this._news = data;
@@ -106,10 +106,10 @@ export default class NewsRendering {
         if (data.length === 0) {
           this._notFound.classList.remove(this.cfg.notFound.hide);
         } else {
-          this._unblockForm();
           this._renderCards();
           this._resultsSection.classList.remove(this.cfg.resultsSection.hide);
         }
+        this._unblockForm();
       })
       .catch((err) => {
         this._notFound.classList.add(this.cfg.notFound.hide);

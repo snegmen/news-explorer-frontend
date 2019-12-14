@@ -8,7 +8,7 @@ import HeadingMenu from '../../scripts/heading-menu';
 import Popup from '../../blocks/common/popup/popup';
 import SysError from '../../blocks/common/error/error';
 import ApiBack from '../../scripts/api';
-import ArticlesSaved from '../../scripts/articles';
+import ArticlesSaved from '../../scripts/articles-saved';
 
 const sysError = new SysError();
 const apiBack = new ApiBack(config);

@@ -13,7 +13,7 @@ import NewsRendering from './scripts/news-rendering';
 
 const sysError = new SysError();
 const apiBack = new ApiBack(config);
-const newsApi = new NewsApi(config.newsFeed);
+const newsApi = new NewsApi(config.newsFeed, config.sevenDays);
 
 const loginForm = new Popup(
   document.querySelector('#login-form'),
