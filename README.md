@@ -6,7 +6,7 @@
 
 [Страница на gh-pages](https://snegmen.github.io/news-explorer-frontend/)
 
-## Версия 0.1.0
+## Версия 0.2.0
 
 ## Технологии
 + CSS, HTML, Webpack, Javascript
