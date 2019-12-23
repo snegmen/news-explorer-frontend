@@ -16,19 +16,34 @@ export default class NewsApi {
         if (!res.ok) throw new Error('Can not read news feed');
         return res.json();
       })
+      // .then((data) => {
+      //   const news = [];
+      //   for (let i = 0; i < data.articles.length; i += 1) {
+      //     news.push({
+      //       source: data.articles[i].source.name,
+      //       title: data.articles[i].title,
+      //       date: new Date(Date.parse(data.articles[i].publishedAt)),
+      //       text: data.articles[i].description,
+      //       image: data.articles[i].urlToImage,
+      //       link: data.articles[i].url,
+      //       keyword: query,
+      //     });
+      //   }
+      //   return news;
+      // })
       .then((data) => {
         const news = [];
-        for (let i = 0; i < data.articles.length; i += 1) {
+        data.articles.forEach((item)=> {
           news.push({
-            source: data.articles[i].source.name,
-            title: data.articles[i].title,
-            date: new Date(Date.parse(data.articles[i].publishedAt)),
-            text: data.articles[i].description,
-            image: data.articles[i].urlToImage,
-            link: data.articles[i].url,
+            source: item.source.name,
+            title: item.title,
+            date: new Date(Date.parse(item.publishedAt)),
+            text: item.description,
+            image: item.urlToImage,
+            link: item.url,
             keyword: query,
           });
-        }
+        });
         return news;
       })
       .catch((err) => {

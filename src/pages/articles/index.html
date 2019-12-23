@@ -84,7 +84,7 @@
           <div class="popup__close" id="close-login-form"></div>
           <h4 class="popup__title">Вход</h4>
           <span class="popup__subtitle">E-mail</span>
-          <input class="popup__input" name="email" id="email" type="email" placeholder="Введите почту" required>
+          <input class="popup__input" name="email" pattern="^[a-zA-Z]\w*@\w+\.\w{2,6}" id="email" type="email" placeholder="Введите почту" required>
           <span class="popup__error popup__error_hide" id="error-email">Неправильный формат email</span>
           <span class="popup__subtitle">Пароль</span>
           <input class="popup__input" name="password" id="password" type="password" placeholder="Введите пароль" required>
@@ -100,7 +100,7 @@
           <div class="popup__close" id="close-signup-form"></div>
           <h4 class="popup__title">Регистрация</h4>
           <span class="popup__subtitle">E-mail</span>
-          <input class="popup__input" name="email" id="regemail" type="email" placeholder="Введите почту" required>
+          <input class="popup__input" name="email" pattern="^[a-zA-Z]\w*@\w+\.\w{2,6}" id="regemail" type="email" placeholder="Введите почту" required>
           <span class="popup__error popup__error_hide" id="error-regemail">Введите email</span>
           <span class="popup__subtitle">Пароль</span>
           <input class="popup__input" name="password" id="regpassword" type="password" placeholder="Введите пароль" required minlength="8">
